@@ -20,7 +20,7 @@ class UserProfile:
                 print("*"*18)
                 self.answer = input ("If you want to answer, just type yes:")
                 if self.answer.strip().lower() == "yes":
-                    message = input("Answer: ")                            # izbacio mi je error jer nije zatovrena zagrada!!!!PAZIIIII!!!!!!!
+                    message = input("Answer: ")                           
                     self.carID = f"INSERT INTO messages (car_id,user_sent_id,user_received_id,message) VALUES ({self.carId},{self.userId},{self.senderID},'{message}')" #obavezno  ' ' navodnici
                     mycursor.execute(self.carID)
                     my_database.commit()
