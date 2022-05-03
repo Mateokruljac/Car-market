@@ -2,7 +2,6 @@ from Data import mycursor,my_database
 from login import LogIn
 import time
 
-print()
 class SetCar:
     def set_car(self):
         print("Loading...")
